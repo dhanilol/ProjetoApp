@@ -12,7 +12,6 @@ export class LivroProvider {
     }
 
     popularLivros() {
-        //console.log("passei PopularLivros");
         this.livros.push({
             id: 1, titulo: "Livro 1", ano: 2017, img:
                 "assets/capas/livro1.jpg"
