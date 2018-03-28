@@ -5,20 +5,27 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { LivroListPage } from '../pages/livro-list/livro-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AnimatesDirective, AnimationService } from "css-animator";
+import { LivroProvider } from "../providers/livro";
 import {Camera} from "@ionic-native/camera";
 
+import { LivroAddPage } from "../pages/livro-add/livro-add";
+import { LivroDetailsPage } from "../pages/livro-details/livro-details";
 
 @NgModule({
 	declarations: [
 		MyApp,
 		HomePage,
 		ListPage,
+		LivroListPage,
+		LivroAddPage, 
+		LivroDetailsPage,
 		AnimatesDirective
 	],
 	imports: [
@@ -30,13 +37,17 @@ import {Camera} from "@ionic-native/camera";
 	entryComponents: [
 		MyApp,
 		HomePage,
-		ListPage
+		ListPage,
+		LivroListPage,
+		LivroAddPage,
+		LivroDetailsPage
 	],
 	providers: [
 		StatusBar,
 		SplashScreen,
 		AnimationService,
 		{ provide: ErrorHandler, useClass: IonicErrorHandler },
+		LivroProvider,
 		Camera
 	]
 })

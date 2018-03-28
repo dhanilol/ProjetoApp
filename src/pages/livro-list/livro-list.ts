@@ -22,13 +22,14 @@ export class LivroListPage {
     constructor(public navCtrl: NavController, public navParams: NavParams, public livroProvider:LivroProvider) {
         // If we navigated to this page, we will have an item available as a nav param
         this.selectedItem = navParams.get('item');
+        this.visibilidade = false;
         
         this.items = livroProvider.getLivros();
         // Aqui removemos todas as linhas de inserção de itens, já que agora
         // está dentro do método livroProvider.getLivros()
 
         this.itemsFilter = this.items;
-        this.visibilidade = false;
+        
     }
 
     ionViewWillEnter() {

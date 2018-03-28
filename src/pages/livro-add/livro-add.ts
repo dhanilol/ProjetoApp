@@ -28,18 +28,18 @@ export class LivroAddPage {
         if (this.livro == null) {
             this.modoEdicao = false;
             this.livro = this.livroProvider.getInstancia();
-        }
-        else
+        } else {
             this.modoEdicao = true;
-        this.imagemUploaded = (this.livro.img != "" && this.livro.img != null);
+            this.imagemUploaded = (this.livro.img != "" && this.livro.img != null);
+        }
     }
 
     salvar(evento) {
-        if (!this.modoEdicao)
+        if (!this.modoEdicao) {
             this.livroProvider.adicionarLivro(this.livro);
-        else
+        } else {
             this.livroProvider.alterarLivro(this.livro);
-
+        }
         this.navCtrl.pop();
     }
 
