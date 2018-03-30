@@ -6,8 +6,8 @@
 	</ion-header>
 
 	<ion-content>
-		<ion-card>
 
+		<ion-card>
 			<ion-item>
 				<ion-avatar item-start>
 					<img src="assets/imgs/user_avatar.png">
@@ -17,13 +17,15 @@
 			<ion-card-content>
 				<p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa.
 					This is heavy.</p>
-			</ion-card-content>
+			</ion-card-content>			
 		</ion-card>
+
 		<ion-list>
 			<button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
 				{{p.title}}
 			</button>
 		</ion-list>
+		
 	</ion-content>
 
 </ion-menu>
