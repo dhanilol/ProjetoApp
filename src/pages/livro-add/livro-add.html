@@ -20,8 +20,18 @@
         </ion-item>
 
         <ion-item>
+            <ion-label floating>Autor</ion-label>
+            <ion-input type="text" [(ngModel)]="livro.autor"></ion-input>
+        </ion-item>
+
+        <ion-item>
             <ion-label floating>Ano</ion-label>
             <ion-input type="number" [(ngModel)]="livro.ano"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Descrição</ion-label>
+            <ion-input type="text" [(ngModel)]="livro.descricao"></ion-input>
         </ion-item>
 
         <ion-item>
