@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { LivroListPage } from '../pages/livro-list/livro-list';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +21,6 @@ import { LivroDetailsPage } from "../pages/livro-details/livro-details";
 	declarations: [
 		MyApp,
 		HomePage,
-		ListPage,
 		LivroListPage,
 		LivroAddPage, 
 		LivroDetailsPage,
@@ -37,7 +35,6 @@ import { LivroDetailsPage } from "../pages/livro-details/livro-details";
 	entryComponents: [
 		MyApp,
 		HomePage,
-		ListPage,
 		LivroListPage,
 		LivroAddPage,
 		LivroDetailsPage
