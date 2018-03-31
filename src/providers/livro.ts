@@ -54,7 +54,6 @@ export class LivroProvider {
         this.livros.splice(position, 1);
     }
     
-    
     private getNextID(): number {
         let nextId = 0;
         
