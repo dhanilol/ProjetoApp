@@ -11,6 +11,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LivroListPage } from '../pages/livro-list/livro-list';
 import { AutorListPage } from '../pages/autor-list/autor-list';
+import { SobrePage } from '../pages/sobre/sobre';
 
 import { LivroProvider } from "../providers/livro";
 import { LivroAddPage } from "../pages/livro-add/livro-add";
@@ -31,7 +32,9 @@ import { AutorDetailsPage } from "../pages/autor-details/autor-details";
 
 		AutorListPage,
 		AutorAddPage,
-		AutorDetailsPage,
+        AutorDetailsPage,
+        
+        SobrePage,
 
 		AnimatesDirective
 	],
@@ -53,7 +56,9 @@ import { AutorDetailsPage } from "../pages/autor-details/autor-details";
 		
 		AutorListPage,
 		AutorAddPage,
-		AutorDetailsPage
+        AutorDetailsPage,
+        
+        SobrePage
 	],
 
 	providers: [
